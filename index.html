@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/mystyle.css">
     <!-- Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" href="./css/animate.css">
+   
 </head>
 
 <body>
@@ -50,13 +53,13 @@
                 </div>
             </div>
             <div class="container-img">
-                <img  src="./images/shape.svg" alt="" class="shape">
+                <img src="./images/shape.svg" alt="" class="shape">
                 <img src="./images/mypic.png" alt="" class="mypic">
             </div>
         </div>
     </section>
     <section class="about" id="about">
-        <div class="container-img">
+        <div class="container-img wow slideInLeft">
             <img src="./images/about.png" alt="">
         </div>
         <div class="container-texts">
@@ -72,7 +75,7 @@
     <section class="services" id="services">
         <h1 class="text-center"><span>Our </span>services</h1>
         <div class="box">
-            <div class="card">
+            <div class="card wow slideInLeft" data-wow-duration="1s">
                 <i class="fa-solid fa-mobile"></i>
                 <h5>Mobile Developer</h5>
                 <div class="par">
@@ -84,7 +87,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
                 <i class="fa-solid fa-sitemap"></i>
                 <h5>Mobile Developer</h5>
                 <div class="par">
@@ -96,7 +99,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <i class="fa-solid fa-desktop"></i>
                 <h5>Mobile Developer</h5>
                 <div class="par">
@@ -108,7 +111,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card wow slideInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
                 <i class="fa-solid fa-person"></i>
                 <h5>Mobile Developer</h5>
                 <div class="par">
@@ -144,7 +147,7 @@
                 <div class="skill"><img src="./images/html.png" alt=""></div>
             </div>
         </div>
-        <div class="container-img">
+        <div class="container-img wow slideInLeft">
             <img src="./images/skills.png" alt="">
         </div>
     </section>
@@ -152,14 +155,14 @@
         <h1 class="text-center"><span>Contact </span>Me</h1>
         <div class="contact-box">
             <form action="" method="post">
-                <input type="text" name="name" placeholder="Your Name" required><br/>
-                <input type="email" name="email" placeholder="Your Email" required><br/>
-               <textarea rows="10"  name="message"  placeholder="Message" ></textarea><br/>
-               <input type="submit" value="send">
+                <input type="text" name="name" placeholder="Your Name" required><br />
+                <input type="email" name="email" placeholder="Your Email" required><br />
+                <textarea rows="10" name="message" placeholder="Message"></textarea><br />
+                <input type="submit" value="send">
 
             </form>
-           
-          
+
+
         </div>
     </section>
     <footer>
@@ -171,8 +174,16 @@
             <p class="end">copyright by ahmed AbuDagga</p>
         </div>
     </footer>
+     <!-- jquery CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- main js file -->
     <script src="./js/main.js"></script>
-   
+    <!-- wow.js -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
